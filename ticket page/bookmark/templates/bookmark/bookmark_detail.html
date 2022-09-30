@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}티켓 오픈 소식 상세{% endblock %}
+
+{% block content %}
+<br>
+<br>
+    <h1>{{ object.title }}</h1>
+    <ul>
+        <li>URL : <a href="{{ object.url }}">{{ object.url }}</a></li>
+    </ul>
+{% endblock %}

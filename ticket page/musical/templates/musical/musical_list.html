@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!-- 제목 블록 start -->
+{% block title %}Musical{% endblock %}
+
+<!-- 스타일 블록 start -->
+{% block extra-style %}
+<style>
+  a{
+    color:#716DF2;
+  }
+  a:hover{
+    color:#46658C;
+  }
+    .thumbnail {
+        border: 3px #ccc;
+    }
+
+    .poster {
+        width: 350px;
+    }
+    .ms5-l-tit {
+        font-size: 26px;
+        width: 1110px;
+        color: #333;
+        left: 54px;
+        top: 52px;
+        font-weight: bold;
+        font-family: 'Noto Sans KR','NanumBarunGothic','맑은 고딕','Malgun Gothic',sans-serif;
+    }
+   .card-deck{
+    width:830px;
+   }
+   .card-title{
+    background: url(http://tkfile.yes24.com/imgNew/genre/ico-ms5-r-tit.png)no-repeat right center;
+   }
+</style>
+
+{% endblock %}
+
+<!-- 콘텐츠 블록 start -->
+{% block content %}
+<br>
+<br>
+<p class="m2-tit"><img src="http://tkfile.yes24.com/imgNew/genre/m2-tit02.png" alt=""></p>
+
+<div class='row'>
+    {% for object in object_list %}
+    <div class="thumbnail col-4">
+        <img src="{{ object.image.url }}" class="poster" alt="{{ object }}">
+        <h5>{{ object }}</h5>
+        <br>
+    </div>
+    {% endfor %}
+</div>
+<hr>
+<p class="ms5-l-tit">WEEKLY RANKING&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📌지역별 추천</p>
+<div class="row">
+    <div class="card" style="width: 18rem;">
+        <ul class="list-group list-group-flush">
+          <a href="http://ticket.yes24.com/Perf/43127">
+          <li class="list-group-item">1. 뮤지컬 [모딜리아니]</li></a>
+          <a href="http://ticket.yes24.com/Perf/43126">
+          <li class="list-group-item">2. 뮤지컬 [에곤 실레]</li></a>
+          <a href="https://tickets.interpark.com/goods/22005589">
+          <li class="list-group-item">3. 뮤지컬 [비더슈탄트]</li></a>
+          <a href="https://tickets.interpark.com/goods/22009732">
+          <li class="list-group-item">4. 뮤지컬 [삼총사]</li></a>
+          <a href="https://tickets.interpark.com/goods/22010915">
+          <li class="list-group-item">5. 태양의서커스〈뉴 알레그리아〉</li></a>
+          <a href="https://tickets.interpark.com/goods/22007400">
+          <li class="list-group-item">6. 뮤지컬 [시데레우스]</li></a>
+          <a href="http://ticket.yes24.com/Perf/42439">
+          <li class="list-group-item">7. 뮤지컬 [쓰릴 미]</li></a>
+          <a href="https://tickets.interpark.com/goods/22012033">
+          <li class="list-group-item">8. 뮤지컬〈지저스 크라이스트 수퍼스타> 50주년 기념 한국 공연</li></a>
+          <a href="http://ticket.yes24.com/Perf/42829">
+          <li class="list-group-item">9. 2022 뮤지컬〈미드나잇 : 액터뮤지션〉</li></a>
+          <a href="http://ticket.yes24.com/Perf/43293?Gcode=009_400">
+          <li class="list-group-item">10. 2022 푸에르자부르타 웨이라 인 서울</li></a>
+          <a href="http://ticket.yes24.com/Perf/43118">
+          <li class="list-group-item">11. 뮤지컬〈안나, 차이코프스키〉</li></a>
+          <a href="https://tickets.interpark.com/goods/22012589">
+          <li class="list-group-item">12. 뮤지컬〈브로드웨이 42번가〉</li></a>
+        </ul>
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="card-deck">
+        <div class="card">
+          <a href="http://ticket.yes24.com/Perf/42249?Gcode=009_407">
+          <img src="http://tkfile.yes24.com/upload2/PerfBlog/202205/20220517/20220517-42249.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">[전주] 프리즌</h5>
+            <p class="card-text">총 100분 (인터미션 00분)<br><br>* 공연시간<br>수,목,금 오후 7시 30분<br>토요일 오후 3시, 6시<br>일요일 오후 4시<br><br>* 티켓수령안내<br>현장 수령
+              </p>
+            <p class="card-text"><small class="text-muted">2022.10.07 ~ 2022.12.25</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="https://tickets.interpark.com/goods/22011993">
+          <img src="https://ticketimage.interpark.com/Play/image/large/22/22011993_p.gif" class="card-img-top" alt="..." style="height:342.53px"></a>
+          <div class="card-body">
+            <h5 class="card-title">[대구] 킹키부츠</h5>
+            <p class="card-text">총 155분(인터미션 20분)<br><br>* 공연시간<br>금 오후 7시 30분<br>토요일 오후 2시, 7시<br>일요일 2시, 6시 30분<br><br>* 티켓수령안내<br>현장 수령</p>
+            <p class="card-text"><small class="text-muted">2022.11.04 ~2022.11.13</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="http://ticket.yes24.com/Perf/13605?Gcode=009_407">
+          <img src="http://tkfile.yes24.com/upload2/PerfBlog/202205/20220513/20220513-13605.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">[제주] 난타</h5>
+            <p class="card-text">총 100분<br><br>* 공연시간<br>월,화,수,목,금,토,일 오후 5시<br><br><br><br>* 티켓수령안내<br>현장 수령</p>
+            <p class="card-text"><small class="text-muted">2012.04.01 ~ 2022.12.31</small></p>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+<br>
+<hr>
+
+{% endblock %}
+
+<!-- 스크립트 블록 start -->
+{% block extra-script %}
+{% endblock %}

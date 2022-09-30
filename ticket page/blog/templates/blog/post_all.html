@@ -1,0 +1,289 @@
+{% extends "base.html" %}
+
+{% block title %}Review{% endblock %}
+
+{% block extra-style %}
+<style>
+    @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+    * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;  
+    font-family: Pretendard;
+    }
+
+    .flip { 
+    width: 250px;
+    height: 350px;
+    position: relative; 
+    perspective: 1100px;
+    margin: 2rem;
+    }
+
+    .card {
+    width: 100%; 
+    height: 100%; 
+    position: relative;
+    transition: .4s;
+    transform-style: preserve-3d;
+    } 
+
+    .front, .back {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+    .back { 
+    background: #F8F8FF; 
+    transform: rotateY(180deg);
+    }
+
+    .flip:hover .card {
+    transform: rotateY(180deg);
+    }
+</style>
+{% endblock %}
+
+
+{% block content %}
+<br>
+<br>
+    <h1>📢 Review</h1>
+    <br>
+    <div class="row">
+        <div class="flip">  
+            <div class="card">
+            <!-- 앞면 -->
+            <div class="front">
+                <img src="http://cdn.ggilbo.com/news/photo/202207/924845_756810_5037.jpg" style="width:250px; height:350px;"alt="img front"/>
+            </div>
+            <!-- 뒷면 -->
+            <div class="back">
+                <h5>성량 쩔고 청량하고 딕션 짱짱한 라이브 외에도 이미 알려진 바와 같이 거의 한강 불꽃놀이 축제 스케일 + 드론쇼(진짜 개쩔어써)+ 열기구 + 공중공연 등으로 너무나 꽉꽉 찬 콘서트였다!</h5>
+            </div>
+            </div>
+        </div>
+        <div class="flip">  
+            <div class="card">
+            <!-- 앞면 -->
+            <div class="front">
+                <img src="https://ticketimage.interpark.com/Play/image/large/22/22010438_p.gif" style="width:250px; height:350px;"alt="img front"/>
+            </div>
+            <!-- 뒷면 -->
+            <div class="back">
+                <h5>바이올린, 드럼, 베이스, 기타 각각의 소리에 집중하다 보면 이게 밴드의 맛인가 싶었다. 그리고 이 모든 것들의 조화가 너무 아름다웠고 꿈만 같았다.</h5>
+            </div>
+            </div>
+        </div>
+        <div class="flip">  
+            <div class="card">
+            <!-- 앞면 -->
+            <div class="front">
+                <img src="https://ticketimage.interpark.com/Play/image/large/22/22007866_p.gif" style="width:250px; height:350px;"alt="img front"/>
+            </div>
+            <!-- 뒷면 -->
+            <div class="back">
+                <h5>빌리아일리시 기대했고, 충분히 그 기대에 만족할만한 공연이었다. 하지만 문제는 공연시간.. 8시15분에 시작해 9시 30분이 조금 넘은시간에 끝나니.. 다소 허탈하다.</h5>
+            </div>
+            </div>
+        </div>
+        <div class="flip">  
+            <div class="card">
+            <!-- 앞면 -->
+            <div class="front">
+                <img src="http://tkfile.yes24.com/upload2/PerfBlog/202207/20220722/20220722-42948.jpg" style="width:250px; height:350px;"alt="img front"/>
+            </div>
+            <!-- 뒷면 -->
+            <div class="back">
+                <h5>드디어 기다리고 기다리던 5년 만의 슴콘 사실 슴콘은 처음이다. 콘서트도 처음이라 후유증이 아직도 남아있는 것같다,,ㅠㅠ</h5>
+            </div>
+            </div>
+        </div>
+        <div class="flip">  
+            <div class="card">
+            <!-- 앞면 -->
+            <div class="front">
+                <img src="http://tkfile.yes24.com/upload2/PerfBlog/202207/20220725/20220725-42827.jpg" style="width:250px; height:350px;"alt="img front"/>
+            </div>
+            <!-- 뒷면 -->
+            <div class="back">
+                <h5>오랜만에 야외 페스티벌이라 되게 재밌었어요!!!
+                    다만 엄청 엄청 더워가지고.... 물을 계속 마신듯.... 그래도 모든 공연들 다 재밌었고
+                    행복했던 하루를 보낼 수 있어서 좋았어요!!</h5>
+            </div>
+            </div>
+        </div>
+        <div class="flip">  
+            <div class="card">
+            <!-- 앞면 -->
+            <div class="front">
+                <img src="https://cdnticket.melon.co.kr/resource/image/upload/product/2022/08/20220818150138d2b439ba-3723-4a01-95d0-216951c12c06.jpg/melon/resize/180x254/strip/true/quality/90/optimize" style="width:250px; height:350px;"alt="img front"/>
+            </div>
+            <!-- 뒷면 -->
+            <div class="back">
+                <h5>진짜 너무너무 재밌었다. 스탠딩을 하면서  느낀건 키커서 개이득이였다. 엄마 아빠 땡큐!
+
+                    그리고 나중에 또 이렇게 스탠딩을 할 기회가 있다면  허리보호대랑 발목보호대도 착용하고가야지…
+                    
+                    진짜 3일 내내 행복했고 3일 동안 셋리는 같았지만  뭔가 3일 다 달랐음ㅠㅠㅠㅠㅠ</h5>
+            </div>
+            </div>
+        </div>
+        <div class="flip">  
+            <div class="card">
+            <!-- 앞면 -->
+            <div class="front">
+                <img src="https://ticketimage.interpark.com/Play/image/large/22/22011993_p.gif" style="width:250px; height:350px;"alt="img front"/>
+            </div>
+            <!-- 뒷면 -->
+            <div class="back">
+                <h5>정말 힐링 지대로 하고 왔습니다. 너무 너무 즐거운 공연이었습니다.</h5>
+            </div>
+            </div>
+        </div>
+        <div class="flip">  
+            <div class="card">
+            <!-- 앞면 -->
+            <div class="front">
+                <img src="http://tkfile.yes24.com/upload2/PerfBlog/202204/20220405/20220405-41880.jpg" style="width:250px; height:350px;"alt="img front"/>
+            </div>
+            <!-- 뒷면 -->
+            <div class="back">
+                <h5>배우분들의 연기가 정말 좋았어요. 특히 지킬과 하이드를 오가는 신성록 배우님을 고른 건 굉장히 탁월했다는 생각이 들었어요. 악랄한 하이드의 격정적인 연기를 정말 잘하시더라고요. 2막이 특히 무섭기도 하고 여러 번 놀라며 보았습니다. 다시 보고 싶어지는 뮤지컬이었어요.</h5>
+            </div>
+            </div>
+        </div>
+        <div class="flip">  
+            <div class="card">
+            <!-- 앞면 -->
+            <div class="front">
+                <img src="http://tkfile.yes24.com/upload2/PerfBlog/202107/20210712/20210712-38619.jpg" style="width:250px; height:350px;"alt="img front"/>
+            </div>
+            <!-- 뒷면 -->
+            <div class="back">
+                <h5>극 자체가 굉장히 따뜻하면서도 슬펐어요. 슬픈 내용이라는걸 알고 봤는데도 눈물을 쏙 뺐네요. 넘버들도 굉장히 좋았는데, 특히 마지막에 해나가 불렀던 goodbye days가 계속 맴돌아요. 10대들의 청춘, 청량한 느낌과 더불어 풋풋한 사랑과 이별까지 짧은 시간 안에 잘 그려낸것 같아요. </h5>
+            </div>
+            </div>
+        </div>
+        <div class="flip">  
+            <div class="card">
+            <!-- 앞면 -->
+            <div class="front">
+                <img src="http://tkfile.yes24.com/upload2/PerfBlog/202103/20210324/20210324-38744.jpg" style="width:250px; height:350px;"alt="img front"/>
+            </div>
+            <!-- 뒷면 -->
+            <div class="back">
+                <h5>세종 문화회관 무대가 특이해서 무대랑은 거리가 있어서 너무 아쉬웠지만 그래도 열연하는 배우님들 덕분에 2021년 최고의 하루를 보냈네요! </h5>
+            </div>
+            </div>
+        </div>
+        <div class="flip">  
+            <div class="card">
+            <!-- 앞면 -->
+            <div class="front">
+                <img src="https://ticketimage.interpark.com/Play/image/large/22/22008801_p.gif" style="width:250px; height:350px;"alt="img front"/>
+            </div>
+            <!-- 뒷면 -->
+            <div class="back">
+                <h5>기대이상의 재미와 최선을 다하는 배우들의 모습에 감동받았던 공연이었습니다 제가 드릴께 박수뿐이라 끝까지 박수치고 나왔습니다 감사합니다 ~♡</h5>
+            </div>
+            </div>
+        </div>
+        <div class="flip">  
+            <div class="card">
+            <!-- 앞면 -->
+            <div class="front">
+                <img src="https://cdnticket.melon.co.kr/resource/image/upload/product/2022/05/202205121140139c622517-e9b8-4ae1-9df1-3988bca599d1.jpg/melon/resize/180x254/strip/true/quality/90/optimize" style="width:250px; height:350px;"alt="img front"/>
+            </div>
+            <!-- 뒷면 -->
+            <div class="back">
+                <h5>너무너무 재미있었어요
+                    요즘같이 힘든세상에 조금 더 살아갈 욕심이 나게해주는 최고의 힐링 뮤지컬이었습니다.
+                    뮤지컬 처음보는데 빨래 이길 뮤지컬은 없을것같아요 ㅠ 너무너무 재미있게봤습니다!</h5>
+            </div>
+            </div>
+        </div>
+        <div class="flip">  
+            <div class="card">
+            <!-- 앞면 -->
+            <div class="front">
+                <img src="http://tkfile.yes24.com/upload2/PerfBlog/202203/20220325/20220325-41798.jpg" style="width:250px; height:350px;"alt="img front"/>
+            </div>
+            <!-- 뒷면 -->
+            <div class="back">
+                <h5>코로나 이후 오랜만의 올림픽 공원에서의 야외 페스티벌 !!!떼창까지 할 수 있어고 2열에서 보니 뷰민라 정말 최고였어요^^내년에도 꼭 갑니다.내년엔 지정석 1열!!</h5>
+            </div>
+            </div>
+        </div>
+        <div class="flip">  
+            <div class="card">
+            <!-- 앞면 -->
+            <div class="front">
+                <img src="http://tkfile.yes24.com/upload2/PerfBlog/202208/20220817/20220817-43155.jpg" style="width:250px; height:350px;"alt="img front"/>
+            </div>
+            <!-- 뒷면 -->
+            <div class="back">
+                <h5>첫 오프콘서트를 드림쇼로 채울 수 있어서 정말 행복했고 헤어나올 수 없는, 그리고 빠져나오고 싶지않은 추억이 된 것 같아요 3시간동안 33곡을 꽉 채워서 불러준 드림이들에게 정말 고생 많았고 고맙다고 전하고싶네용 행복한 기억을 남겨준 드림에게, 같은 자리에 함께 있었던 모두에게 드림쇼가 잊혀지지않는 한 순간이 되길!</h5>
+            </div>
+            </div>
+        </div>
+        <div class="flip">  
+            <div class="card">
+            <!-- 앞면 -->
+            <div class="front">
+                <img src="https://ticketimage.interpark.com/Play/image/large/22/22004869_p.gif" style="width:250px; height:350px;"alt="img front"/>
+            </div>
+            <!-- 뒷면 -->
+            <div class="back">
+                <h5>올콘이었는데 어느 하루 재미없지 않은 하루가 없었어요
+                    무대를 하고 만든 분들이 굉장히 많이 노력하신것 같아 좋았고
+                    관객도 역대급으로 매너와 반응이 좋아서 잘 즐겼어요
+                    모든 이유 감사합니당!!!</h5>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--{% for post in posts %}
+        <h3><a href='{{ post.get_absolute_url }}'>{{ post.title }}</a></h3>
+        {{ post.modify_dt|date:"N d, Y" }}
+        <p>{{ post.description }}</p>
+    {% endfor %}
+    </br>
+
+    <div>
+        <span>
+            {% if page_obj.has_previous %}
+                <a href="?page={{ page_obj.previous_page_number }}">PreviousPage</a>
+            {% endif %}
+
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">NextPage</a>
+            {% endif %}
+        </span>
+    </div>-->
+{% endblock %}

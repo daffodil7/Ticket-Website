@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+<!-- 제목 블록 start -->
+{% block title %}
+{% endblock %}
+
+<!-- 스타일 블록 start -->
+{% block extra-style %}
+<style>
+    .thumbnail {
+        border: 3px #ccc;
+    }
+
+    .poster {
+        width: 350px;
+    }
+    .ms5-l-tit {
+        font-size: 26px;
+        width: 1110px;
+        color: #333;
+        left: 54px;
+        top: 52px;
+        font-weight: bold;
+        font-family: 'Noto Sans KR','NanumBarunGothic','맑은 고딕','Malgun Gothic',sans-serif;
+    }
+   .card-deck{
+    width:830px;
+   }
+   .card-title{
+    background: url(http://tkfile.yes24.com/imgNew/genre/ico-ms5-r-tit.png)no-repeat right center;
+   }
+   a{
+    color:#716DF2;
+  }
+  a:hover{
+    color:#46658C;
+  }
+</style>
+{% endblock %}
+
+<!-- 콘텐츠 블록 start -->
+{% block content %}
+<br>
+<br>
+
+    {% for object in object_list %}
+        <h3>{{ object }}</h3>
+        <h5>{{ object.description }}</h5><br>
+<div class='row'>
+        {% for photo in object.photo_set.all %}
+            
+                <div class="thumbnail col-4">
+                    <img src="{{ photo.image.url }}" class="poster" alt="{{ photo }}">
+                </div>
+           
+        {% endfor %} </div>
+        <hr>
+    {% endfor %}
+
+
+<p class="ms5-l-tit">WEEKLY RANKING&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📌지역별 추천</p>
+<div class="row">
+    <div class="card" style="width: 18rem;">
+        <ul class="list-group list-group-flush">
+          <a href="http://ticket.yes24.com/Special/43485">
+          <li class="list-group-item">1. KEY CONCERT - G.O.A.T.(Greatest Of All Time) IN THE KEYLAND</li></a>
+          <a href="https://tickets.interpark.com/goods/22011921">
+          <li class="list-group-item">2. 2022 KIM HO JOONG CONCERT TOUR [ARISTRA]</li></a>
+          <a href="https://tickets.interpark.com/goods/22011684">
+          <li class="list-group-item">3. 2022 SOMEDAY PLEROMA</li></a>
+          <a href="http://ticket.yes24.com/Perf/43607">
+          <li class="list-group-item">4. [지정석] 2022 창원 K-POP WORLD FESTIVAL</li></a>
+          <a href="http://ticket.yes24.com/Perf/43185?Gcode=009_303">
+          <li class="list-group-item">5. 그랜드 민트 페스티벌 2022</li></a>
+          <a href="https://tickets.interpark.com/goods/22013007">
+          <li class="list-group-item">6. 거미 20주년 전국투어 콘서트〈BE ORIGIN〉-수원</li></a>
+          <a href="https://tickets.interpark.com/goods/22011593">
+          <li class="list-group-item">7. 2022 하이라이트 팬콘［하이라이트 운동회]</li></a>
+          <a href="http://ticket.yes24.com/Special/43642">
+          <li class="list-group-item">8. [울산] 2022년 ‘Dream 55’ 나훈아 콘서트</li></a>
+          <a href="https://tickets.interpark.com/goods/22012364">
+          <li class="list-group-item">9. 2022 폴킴 전국투어 콘서트〈STAR〉- 대구</li></a>
+          <a href="http://ticket.yes24.com/Perf/43060">
+          <li class="list-group-item">10. 서울숲재즈페스티벌 2022 - 공식 티켓</li></a>
+          <a href="https://tickets.interpark.com/goods/22012294">
+          <li class="list-group-item">11. 2022 안동 K-POP 콘서트</li></a>
+          <a href="https://ticket.melon.com/performance/index.htm?prodId=207277">
+          <li class="list-group-item">12. 2022 AWESOME MUSIC FESTIVAL</li></a>
+        </ul>
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="card-deck">
+        <div class="card">
+          <a href="http://ticket.yes24.com/Perf/43397">
+          <img src="http://tkfile.yes24.com/upload2/PerfBlog/202209/20220902/20220902-43397.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">[창원] 케이윌 콘서트</h5>
+            <p class="card-text">총 150분<br><br>* 공연시간<br>10월 22일(토) 오후 6시<br>
+                10월 23일(일) 오후 5시<br><br><br><br>* 티켓수령안내<br>현장수령 또는 등기우편
+              </p>
+            <p class="card-text"><small class="text-muted">2022.10.22 ~ 2022.10.23</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="http://ticket.yes24.com/Perf/43637">
+          <img src="https://ticketimage.interpark.com/Play/image/large/22/22013099_p.gif" class="card-img-top" alt="..." style="height:342.53px"></a>
+          <div class="card-body">
+            <h5 class="card-title">[광주] 거미 콘서트</h5>
+            <p class="card-text">총 120분<br><br>* 공연시간<br>12월 17일(토) 오후 6시 <br>12월 18일(일) 오후 4시<br><br><br><br>* 티켓수령안내<br>현장수령 또는 등기우편</p>
+            <p class="card-text"><small class="text-muted">2022.12.17 ~2022.12.18</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="http://ticket.yes24.com/Perf/42784">
+          <img src="http://tkfile.yes24.com/upload2/PerfBlog/202207/20220727/20220727-42784.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">[서울] 슬로우 라이프 슬로우 라이브</h5>
+            <p class="card-text">총 540분(인터미션 0분)<br><br>* 공연시간<br>10월 8일 (토) ~ 10(월)<br>
+                오후 1시 ~ 10시<br><br><br>* 티켓수령안내<br>현장수령</p>
+            <p class="card-text"><small class="text-muted">2022.10.08 ~ 2022.10.10</small></p>
+          </div>
+        </div>
+      </div>
+</div>
+
+{% endblock %}
+
+<!-- 스크립트 블록 start -->
+{% block extra-script %}
+{% endblock %}

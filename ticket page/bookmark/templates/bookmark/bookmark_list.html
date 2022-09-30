@@ -1,0 +1,148 @@
+{% extends "base.html"%}
+
+{% block title %}티켓 오픈 소식{% endblock %}
+
+
+{% block extra-style %}
+<style>
+    .mr-3{
+        width:64px;
+        height:64px;
+    }
+    a{
+      color:#716DF2;
+    }
+    a:hover{
+      color:#46658C;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<br>
+<br>
+    <h1>💡 티켓 오픈 소식</h1>
+    <br>
+    <!--
+    {% if user.is_active %}
+        <a class='btn btn-outline-dark' href="{% url 'bookmark:add' %}">글쓰기</a>
+        <a class='btn btn-outline-dark' href="{% url 'bookmark:add' %}">내 글 보기</a>
+    {% endif %} -->
+    <br>
+    <!--<ul>
+        {% for bm in object_list %}
+        <li>
+            <a href="{% url 'bookmark:detail' bm.id %}">{{ bm }}</a>
+        </li>
+        {% endfor %}
+    </ul>-->
+    <ul class="list-unstyled">
+        <li class="media">
+          <img src="http://ticketimage.interpark.com/Play/image/large/22/22013168_p.gif" class="mr-3" alt="...">
+          <div class="media-body">
+            <a href="https://vo.la/mQ06OM">
+            <h5 class="mt-0 mb-1">검정치마 - TEEN TROUBLES In Dirty Jersey 티켓오픈 안내</h5></a>
+            <h6>티켓오픈일 2022년 9월 29일(목) 오후 7시</h6>
+          </div>
+        </li>
+        <hr>
+        <li class="media my-4">
+          <img src="http://tkfile.yes24.com/upload2/PerfBlog/202209/20220928/20220928-43663.jpg" class="mr-3" alt="...">
+          <div class="media-body">
+            <a href="http://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=12210">
+            <h5 class="mt-0 mb-1">거미 20주년 전국투어 콘서트〈BE ORIGIN〉- 부산 티켓오픈안내</h5></a>
+            <h6>티켓오픈일 2022 9월 28일(수) 오후 2시</h6>          
+        </div>
+        </li>
+        <hr>
+        <li class="media">
+          <img src="http://ticketimage.interpark.com/Play/image/large/22/22011593_p.gif" class="mr-3" alt="...">
+          <div class="media-body">
+            <a href="https://vo.la/aJnihV">
+            <h5 class="mt-0 mb-1">2022 하이라이트 팬콘 [하이라이트 운동회] 티켓오픈 안내</h5></a>
+            <h6>티켓오픈일 2022 9월 28일(수) 오후 7시</h6>          </div>
+        </li>
+        <hr>
+        <li class="media">
+            <img src="http://ticketimage.interpark.com/TicketImage/notice_poster/20/2022092617312064.jpg" class="mr-3" alt="...">
+            <div class="media-body">
+              <a href="https://vo.la/Iumq7T">
+              <h5 class="mt-0 mb-1">히사이시 조 영화음악 콘서트 2022_고양 파이널 티켓오픈 안내</h5></a>
+              <h6>티켓오픈일 2022년 10월 5일(수) 오후 2시</h6> 
+            </div>
+          </li>
+          <hr>
+          <li class="media">
+            <img src="http://ticketimage.interpark.com/Play/image/large/22/22013006_p.gif" class="mr-3" alt="...">
+            <div class="media-body">
+              <a href="https://vo.la/wUFfXO">
+              <h5 class="mt-0 mb-1">몬스타엑스（MONSTA X）공식팬클럽 ‘MONBEBE’ 7기 추가모집 티켓오픈 안내</h5></a>
+              <h6>티켓오픈일 2022년 9월 28일(수) 오전 10시</h6> 
+            </div>
+          </li>
+          <hr>
+          <li class="media">
+            <img src="https://cdnticket.melon.co.kr/resource/image/upload/ticketopen/2022/09/202209231636505dadd19f-7362-4db5-a68d-ddc9f8e4bde2.jpg/melon/resize/130x184/strip/true" class="mr-3" alt="...">
+            <div class="media-body">
+              <a href="http://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=12201">
+              <h5 class="mt-0 mb-1">뮤지컬 〈엘리자벳〉 10주년 기념공연－부산 티켓 오픈 안내</h5></a>
+              <h6>티켓오픈일 2022년 9월 30일 (금) 오후 2시</h6> 
+            </div>
+          </li>
+          <hr>
+          <li class="media">
+            <img src="http://tkfile.yes24.com/upload2/PerfBlog/202209/20220922/20220922-43590.jpg" class="mr-3" alt="...">
+            <div class="media-body">
+              <a href="http://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=12198">
+              <h5 class="mt-0 mb-1">〈러브레터〉 예술의전당 자유소극장 2차 티켓오픈 안내</h5></a>
+              <h6>티켓오픈일 2022 9월 29일(목) 오후 1시</h6> 
+            </div>
+          </li>
+          <hr>
+          <li class="media">
+            <img src="http://tkfile.yes24.com/upload2/PerfBlog/202209/20220926/20220926-43630.jpg" class="mr-3" alt="...">
+            <div class="media-body">
+              <a href="http://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=12200">
+              <h5 class="mt-0 mb-1">NCT 127 2ND TOUR ‘NEO CITY : SEOUL - THE LINK +’ 티켓오픈 안내</h5></a>
+              <h6>티켓오픈일 2022 10월 4일(화) 오후 8시</h6> 
+            </div>
+          </li>
+          <hr>
+          <li class="media">
+            <img src="http://tkfile.yes24.com/upload2/PerfBlog/202209/20220922/20220922-43611.jpg" class="mr-3" alt="...">
+            <div class="media-body">
+              <a href="http://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=12176">
+              <h5 class="mt-0 mb-1">김고은 데뷔 10주년 팬미팅〈고은날: come in closer〉티켓오픈안내</h5></a>
+              <h6>티켓오픈일 2022 9월 22일(목) 오후 2시</h6> 
+            </div>
+          </li>
+          <hr>
+          <li class="media">
+            <img src="http://tkfile.yes24.com/upload2/PerfBlog/202209/20220921/20220921-43609.jpg" class="mr-3" alt="...">
+            <div class="media-body">
+              <a href="http://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=12165">
+              <h5 class="mt-0 mb-1">EXID FAN-CON〈EXID X LEGGO〉티켓 오픈 안내</h5></a>
+              <h6>티켓오픈일 2022 9월 22일(목) 오후 7시</h6> 
+            </div>
+          </li>
+          <hr>
+          <li class="media">
+            <img src="http://ticketimage.interpark.com/Play/image/large/22/22009235_p.gif" class="mr-3" alt="...">
+            <div class="media-body">
+              <a href="https://vo.la/WQcM3O">
+              <h5 class="mt-0 mb-1">뮤지컬 〈라흐 헤스트〉 마지막 티켓오픈 안내</h5></a>
+              <h6>티켓오픈일 2022년 10월 5일(수) 오후 2시</h6> 
+            </div>
+          </li>
+          <hr>
+          <li class="media">
+            <img src="http://ticketimage.interpark.com/Play/image/large/22/22012976_p.gif" class="mr-3" alt="...">
+            <div class="media-body">
+              <a href="https://vo.la/FoBA4k">
+              <h5 class="mt-0 mb-1">2022 정승환의 안녕, 겨울 : 그럼에도 사랑하게 될 날들 티켓오픈 안내</h5></a>
+              <h6>티켓오픈일 2022년 10월 4일(화) 오후 8시</h6> 
+            </div>
+          </li>
+      </ul>
+      <br>
+{% endblock %}
