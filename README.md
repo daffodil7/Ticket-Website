@@ -1,8 +1,10 @@
 # Web-Page-Proeject
-## 나의 django 프로젝트(09.23 ~ 09.30)
+## 나의 Django 프로젝트(09.23 ~ 09.30)
 
-* concert
-* musical
-* ticketopen
-* review
+화면 구성
+* Main
+* Concert
+* Musical
+* Ticketopen
+* Review
 
